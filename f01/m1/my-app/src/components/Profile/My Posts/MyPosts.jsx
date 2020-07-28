@@ -4,15 +4,9 @@ import Post from "./Post/Post";
 import Si from "./Post/Si";
 
 const MyPosts = (props) => {
-    let posts = [
-        {id: 1, message: 'Como(tu`) estas?', LikesCount: '17'},
-        {id: 2, message: 'Hi, how are you?', LikesCount: '5'},
-        {id: 3, message: 'It`s my first post', LikesCount: '25'},
-        {id: 4, message: 'I know very vell!', LikesCount: '21'},
 
-
-    ]
-    let postsElements=posts.map(p=><Post message={p.message} LikesCount={p.LikesCount}/>);
+    let postsElements=
+        props.posts.map(p=><Post message={p.message} LikesCount={p.LikesCount}/>);
     return (
         <div className={s.postsBlock}>
             <h3>My Posts</h3>
