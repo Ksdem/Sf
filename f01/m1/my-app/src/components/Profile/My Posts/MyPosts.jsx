@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './MyPosts.module.css';
 import Post from "./Post/Post";
-import Si from "./Post/Si";
+
 
 const MyPosts = (props) => {
 
@@ -13,13 +13,14 @@ const MyPosts = (props) => {
 
     let addPost=()=>{
         let text=newPostElement.current.value;
-      alert('demjs.com');
+      props.addPost('demjs.com');
     }
 
 
     return (
         <div className={s.postsBlock}>
             <h3>My Posts</h3>
+
             <div>
                 <div>
                     <textarea ref={newPostElement}></textarea></div>
@@ -31,10 +32,7 @@ const MyPosts = (props) => {
             </div>
             <div className={s.posts}>
                 {postsElements}
-               {/* <Post message={postData[0].message} LikesCount={postData[0].LikesCount}/>
-                <Post message={postData[1].message} LikesCount={postData[1].LikesCount}/>
-                <Post message={postData[2].message} LikesCount={postData[2].LikesCount}/>
-                <Post message={postData[3].message} LikesCount={postData[3].LikesCount}/>*/}
+
             </div>
         </div>);
 
