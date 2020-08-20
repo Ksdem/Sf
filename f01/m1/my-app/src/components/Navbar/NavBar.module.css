@@ -1,0 +1,23 @@
+.nav{
+    grid-area: n;
+    background-color: lightskyblue;
+}
+
+
+
+
+
+.item {
+    color: blue;
+    font-style: inherit;
+    text-decoration: none;
+}
+
+.active {
+    color: fuchsia;
+    font-stretch: extra-condensed;
+}
+.Items a.activeLink{
+    color: deeppink;
+
+}

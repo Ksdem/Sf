@@ -2,13 +2,17 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Header from "./components/Header/Header";
-import Navbar from "./components/Navbar/Navbar";
+import NavBar from "./components/Navbar/NavBar";
 import Profile from "./components/Profile/Profile";
 import Dialogs from "./components/Dialogs/Dialogs";
-import News from "./components/News/News";
-import Music from "./components/Music/Music";
-import Settings from "./components/Settings/Settings";
+import News from "./components/Navbar/News/News";
+import Music from "./components/Navbar/Music/Music";
+import Settings from "./components/Navbar/Settings/Settings";
+import Friends from "./components/Navbar/Friends/Friends";
+import Message from "./components/Dialogs/Message/Message";
 import {BrowserRouter, Route} from "react-router-dom";
+import {addPost} from "./redux/state";
+/*import Friends from "./components/Friends/Friends";*/
 
 const App = (props) => {
     console.log(props)
@@ -17,18 +21,26 @@ const App = (props) => {
             <div className='app-wrapper'>
 
                 <Header/>
-                <Navbar/>
+                <NavBar/>
                 {/*<Profile/>*/}
                 <div className='app-wrapper-content'>
                     <Route path='/dialogs'
                            render={() => <Dialogs
-                               state={props.state.dialogsPage}/>}/>
+                               state={props.state.dialogsPage}
+                               animals={props.animals}/>}/>
                     <Route path='/profile'
                            render={() => <Profile
-                               state={props.state.profilePage}/>}/>
+                               state={props.state.profilePage}
+                               addPost={props.addPost}
+
+                           />}/>
                     <Route path='/News' render={() => <News/>}/>
                     <Route path='/Music' render={() => <Music/>}/>
-                    <Route path='/Settings' render={() => <Settings/>}/>
+                    <Route path='/Settings' render={() => <Settings
+                    state={props.state.animals}/>}/>
+                    {/*<Route path='/Friends' render={() => <Friends/>}/>*/}
+
+                  {/*  <Route path='/Friends' render={() => <Friends/>}/>*/}
                 </div>
             </div>
         </BrowserRouter>)
