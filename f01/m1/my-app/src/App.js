@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Header from "./components/Header/Header";
 import NavBar from "./components/Navbar/NavBar";
@@ -9,10 +8,10 @@ import News from "./components/Navbar/News/News";
 import Music from "./components/Navbar/Music/Music";
 import Settings from "./components/Navbar/Settings/Settings";
 import Friends from "./components/Navbar/Friends/Friends";
-import Message from "./components/Dialogs/Message/Message";
 import {BrowserRouter, Route} from "react-router-dom";
-import {addPost} from "./redux/state";
-/*import Friends from "./components/Friends/Friends";*/
+import AvaInfo from "./components/Dialogs/Message/AvaInfo/AvaInfo";
+import Message from "./components/Dialogs/Message/Message/Message";
+
 
 const App = (props) => {
     console.log(props)
@@ -36,11 +35,11 @@ const App = (props) => {
                            />}/>
                     <Route path='/News' render={() => <News/>}/>
                     <Route path='/Music' render={() => <Music/>}/>
+                    <Route path='/Friends' render={() => <Friends/>}/>
                     <Route path='/Settings' render={() => <Settings
                     state={props.state.animals}/>}/>
-                    {/*<Route path='/Friends' render={() => <Friends/>}/>*/}
+                    <Route path='/dialogs/avaInfo' render={Message}/>
 
-                  {/*  <Route path='/Friends' render={() => <Friends/>}/>*/}
                 </div>
             </div>
         </BrowserRouter>)

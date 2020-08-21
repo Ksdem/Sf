@@ -9,8 +9,7 @@ const Profile = (props) => {
     return (
         <div>
             <ProfileInfo/>
-            <MyPosts posts={props.state.posts} addPOst={addPost}
-                     addMessage={addMessage}/>
+            <MyPosts posts={props.state.posts} addPOst={addPost}/>
         </div>);
 }
 export default Profile;
