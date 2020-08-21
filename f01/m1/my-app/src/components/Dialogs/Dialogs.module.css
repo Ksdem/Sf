@@ -24,3 +24,11 @@
 .messages.message{
     color: lime;
 }
+
+.item img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid deeppink;
+    padding: 5px;
+}
