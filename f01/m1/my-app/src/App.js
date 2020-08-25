@@ -11,6 +11,7 @@ import Friends from "./components/Navbar/Friends/Friends";
 import {BrowserRouter, Route} from "react-router-dom";
 import AvaInfo from "./components/Dialogs/Message/AvaInfo/AvaInfo";
 import Message from "./components/Dialogs/Message/Message/Message";
+import {updateNewMessageText, updateNewPostText} from "./redux/state";
 
 
 const App = (props) => {
@@ -26,11 +27,14 @@ const App = (props) => {
                     <Route path='/dialogs'
                            render={() => <Dialogs
                                state={props.state.dialogsPage}
-                               animals={props.animals}/>}/>
+                               addMessage={props.addMessage}
+                               updateNewMessageText={updateNewMessageText}
+                           />}/>
                     <Route path='/profile'
                            render={() => <Profile
-                               state={props.state.profilePage}
+                              profilePage={props.state.profilePage}
                                addPost={props.addPost}
+                              updateNewPostText={updateNewPostText}
 
                            />}/>
                     <Route path='/News' render={() => <News/>}/>
