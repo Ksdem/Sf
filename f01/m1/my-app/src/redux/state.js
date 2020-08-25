@@ -1,5 +1,6 @@
 
 import React from "react";
+import {rerenderEntireTree} from "../render";
 
 let state={
     profilePage:{
@@ -7,9 +8,12 @@ let state={
             {id: 2, message: 'Hi, how are you?', LikesCount: '5'},
             {id: 3, message: 'It`s my first post', LikesCount: '25'},
             {id: 4, message: 'I know very vell!', LikesCount: '21'},],
+        newPostText: 'Dem'
+
 
     },
 dialogsPage:{
+        new1:'Message',
     messages:[{id: 1, message: 'Hi'},
         {id: 2, message: 'How is'},
         {id: 3, message: 'Yes'},],
@@ -20,32 +24,35 @@ dialogsPage:{
 }
 
 
-
-export let addPost=(postMessage)=>{
+window.state=state;
+export let addPost=()=>{
     let newPost={
         id:5,
-        message:postMessage,
+        message:state.profilePage.newPostText,
         likeCount:0
     };
       state.profilePage.posts.push(newPost);
+    state.profilePage.newPostText='';
+      rerenderEntireTree(state);
 }
-export let addMessage=(Message)=>{
+export let updateNewPostText=(newText)=>{
+    state.profilePage.newPostText=newText;
+    rerenderEntireTree(state);
+}
+export let addMessage=()=>{
     let nemMessage={
         id:2,
-        message: Message,
+        messages: state.dialogsPage.messages,
+
     };
     state.dialogsPage.messages.push(nemMessage);
+    state.dialogsPage.messages='';
+    rerenderEntireTree(state);
 }
-
-export let Animals=(animal)=>{
-    let newAnimal={
-        id:5,
-        ava:animal
-    }
-    state.animals.animalsData.push(newAnimal)
+export let updateNewMessageText=(new1)=>{
+    state.dialogsPage.new1=new1;
+    rerenderEntireTree(state);
 }
-
-
 
 
 
