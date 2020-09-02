@@ -30,19 +30,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5bbd11dc-d80d-427f-aa3c-e134f6fb59df" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Dialogs/Message/ButtonMessage/ButtonMessage.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Dialogs/Message/ButtonMessage/ButtonMessage.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/render.js" afterDir="false" />
+    <list default="true" id="5bbd11dc-d80d-427f-aa3c-e134f6fb59df" name="Default Changelist" comment="Flux">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Message/Message/Message.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Message/Message/Message.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/My Posts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/My Posts/MyPosts.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/state.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/render.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,6 +111,12 @@
       <workItem from="1598263521277" duration="5365000" />
       <workItem from="1598342765571" duration="2304000" />
       <workItem from="1598348880807" duration="12797000" />
+      <workItem from="1598521152331" duration="4551000" />
+      <workItem from="1598607435117" duration="3945000" />
+      <workItem from="1598786217174" duration="3725000" />
+      <workItem from="1598872307662" duration="3356000" />
+      <workItem from="1598958475846" duration="996000" />
+      <workItem from="1599035980302" duration="7867000" />
     </task>
     <servers />
   </component>
@@ -141,26 +144,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1236" y="327" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1590661237295" />
-    <state x="1197" y="257" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1590596515097">
+    <state x="1197" y="257" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1598522217235">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1197" y="257" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590596515097" />
-    <state width="854" height="282" key="GridCell.Tab.0.bottom" timestamp="1598370711172">
+    <state x="1197" y="257" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598522217235" />
+    <state width="782" height="282" key="GridCell.Tab.0.bottom" timestamp="1599036000399">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="854" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1598370711172" />
-    <state width="854" height="282" key="GridCell.Tab.0.center" timestamp="1598370711171">
+    <state width="782" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599036000399" />
+    <state width="782" height="282" key="GridCell.Tab.0.center" timestamp="1599036000399">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="854" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1598370711171" />
-    <state width="854" height="282" key="GridCell.Tab.0.left" timestamp="1598370711171">
+    <state width="782" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599036000399" />
+    <state width="782" height="282" key="GridCell.Tab.0.left" timestamp="1599036000398">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="854" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1598370711171" />
-    <state width="854" height="282" key="GridCell.Tab.0.right" timestamp="1598370711171">
+    <state width="782" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599036000398" />
+    <state width="782" height="282" key="GridCell.Tab.0.right" timestamp="1599036000399">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="854" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1598370711171" />
+    <state width="782" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599036000399" />
     <state x="769" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1598191810823">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -16,15 +16,8 @@ const Dialogs = (props) => {
         <Message key={i} messages={m.message}/>);
 
 
-    /*let animalsElements=props.state.animalsData.map(a=>
-        <AvaInfo nemMessage={a.ava}/>);*/
-
-
     let newMessage = React.createRef();
-    // console.log('props.new1',props.new1,props)
     let addMessage = () => {
-        // console.log(newMessage.current.value)
-        // props.state.messages.push({id: 2, message: newMessage.current.value})
         props.addMessage();
     }
     let onMessageChange=(newValue)=>{
